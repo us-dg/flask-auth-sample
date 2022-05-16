@@ -1,0 +1,77 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Flask-Swagger Boilerplate",
+    "description": "Flask-Swagger Boilerplate is a simple representation of how a flask API can be <br/> used with marshmallow and swagger UI",
+    "LICENCE": "MIT",
+    "contact" : "Utkarsh Singh"
+  },
+  "servers": [
+    {
+      "url":"/",
+      "name":"localhost"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Basic APIs",
+      "description": "Set of basic APIs"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": ["Heartbeat"],
+        "summary": "Checks if API is working",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json; charset=UTF-8": {
+                "schema": {
+                  "$ref": "#components/schemas/heartbeat_output"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource not found",
+            "content": {
+              "application/json; charset=UTF-8": {
+                "schema": {
+                  "$ref": "#components/schemas/default_error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "heartbeat_output" : {
+        "type": "object",
+        "properties" : {
+          "msg": {
+            "type": "string",
+            "format": "string"
+          }
+        }
+      },
+      "default_error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "format": "string"
+          }
+        }
+      }
+    },
+    "parameters": {
+      
+    }
+  }
+}
