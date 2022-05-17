@@ -6,10 +6,7 @@ Projects can be created on top of it.
 
 ## Folder Structure
 
-api     -- stores all the main api files
-
-schemas -- stores the marshmallow schemas
-
-static  -- stores swagger config and other static files
-
-venv    -- stores the environment config
+* api     -- stores all the main api files  
+* schemas -- stores the marshmallow schemas  
+* static  -- stores swagger config and other static files  
+* venv    -- stores the environment config
