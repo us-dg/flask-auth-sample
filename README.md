@@ -1,8 +1,8 @@
 # flask-swagger-boilerplate
 
-Following is a boilerplate code for Flask API integrated with Swagger UI.
-It also uses MarshMallow to structure the schemas and format responses.
-Projects can be created on top of it.
+This is a boilerplate code for Flask API integrated with Swagger UI.
+It also uses MarshMallow to structure the schemas, validate and format responses.
+Projects can be created on top of this boilerplate.
 
 ## Folder Structure
 
