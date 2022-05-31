@@ -13,7 +13,7 @@ def search():
     return 'Hello world!'
 
 @app.route('/headers')
-def search():
+def headers():
     return ba.headers()
 
 SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')
