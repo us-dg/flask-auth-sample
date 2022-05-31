@@ -12,6 +12,10 @@ def hello():
 def search():
     return 'Hello world!'
 
+@app.route('/headers')
+def search():
+    return ba.headers()
+
 SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')
 API_URL = '/static/swagger.json'  # Our API url (can of course be a local resource)
 
