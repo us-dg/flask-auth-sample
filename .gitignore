@@ -130,6 +130,3 @@ dmypy.json
 
 # Client Secrets
 secrets.json
-
-# shell script
-run.sh
