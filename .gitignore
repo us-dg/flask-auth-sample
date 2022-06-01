@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Client Secrets
+secrets.json
+
+# shell script
+run.sh

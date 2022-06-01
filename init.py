@@ -16,6 +16,10 @@ def search():
 def headers():
     return ba.headers()
 
+@app.route('/custom_response')
+def custom_response():
+    return ba.custom_response()
+
 SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')
 API_URL = '/static/swagger.json'  # Our API url (can of course be a local resource)
 
